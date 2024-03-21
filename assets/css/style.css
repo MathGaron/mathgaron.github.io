@@ -520,6 +520,11 @@ section {
   padding-bottom: 30px;
 }
 
+.subsection-title {
+  text-align: center;
+  padding-top: 30px;
+}
+
 .section-title h2 {
   font-size: 32px;
   font-weight: bold;
@@ -1329,7 +1334,7 @@ Card Group
 }
 
 .card {
-  max-width: 300px;
+  max-width: 350px;
   background: #212121;
   border-radius: 0.5rem;
   box-shadow: 7px 7px 15px rgb(25, 25, 25),
@@ -1347,38 +1352,56 @@ Card Group
 }
 
 .image {
+  object-fit: contain;
+  width: 100%;
+  height: 250px;
+  border-radius: 0.5rem;
+
+}
+
+.video {
   object-fit: cover;
   width: 100%;
-  height: 150px;
+  height: 250px;
   background-color: rgb(239, 205, 255);
   border-radius: 0.5rem;
 
 }
 
 .title {
-  color: #111827;
+  color: #d7d7d7;
   font-size: 1.125rem;
   line-height: 1.75rem;
   font-weight: 600;
+  text-decoration: underline;
 }
 
 .desc {
   margin-top: 0.5rem;
-  color: #6B7280;
+  color: #a7a7a7;
   font-size: 0.875rem;
   line-height: 1.25rem;
+}
+
+.year {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  color: #d7d7d7;
+  font-size: 2rem;
+  line-height: 1.25rem;
+  text-align: center;
 }
 
 .action {
   display: inline-flex;
   margin-top: 1rem;
-  color: #ffffff;
+  color: #d7d7d7;
   font-size: 0.875rem;
   line-height: 1.25rem;
   font-weight: 500;
   align-items: center;
   gap: 0.25rem;
-  background-color: #2563EB;
+  background-color: #3b5b27;
   padding: 4px 8px;
   border-radius: 4px;
 }
@@ -1389,4 +1412,26 @@ Card Group
 
 .action:hover span {
   transform: translateX(4px);
+}
+
+/*-----------------------
+Divider
+ */
+
+.divider
+{
+  position: relative;
+  height: 1px;
+}
+
+.div-transparent:before
+{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 5%;
+  right: 5%;
+  width: 90%;
+  height: 1px;
+  background-image: linear-gradient(to right, transparent, #a7a7a7, transparent);
 }
