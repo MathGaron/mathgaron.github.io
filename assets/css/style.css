@@ -1363,12 +1363,12 @@ Card Group
 }
 
 .card {
-  max-width: 350px;
-  min-height: 500px;
+  width: 350px;
+  height: 550px;
   background: #252525;
   border-radius: 0.5rem;
   box-shadow: 7px 7px 15px rgb(25, 25, 25),
-  -7px -7px 15px rgb(60, 60, 60);
+  -7px -7px 15px rgb(25, 25, 25);
   border: 1px solid transparent;
 
 }
@@ -1422,6 +1422,15 @@ Card Group
   text-align: center;
 }
 
+.patent-state {
+  margin-top: 0.5rem;
+  color: #a7a7a7;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  position:absolute; bottom:10px;
+
+}
+
 .action {
   display: inline-flex;
   margin-top: 1rem;
@@ -1434,6 +1443,7 @@ Card Group
   background-color: #3b5b27;
   padding: 4px 8px;
   border-radius: 4px;
+  position:absolute; bottom:10px;
 }
 
 .action span {
